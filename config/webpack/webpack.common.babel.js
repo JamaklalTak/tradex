@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
+
 import paths from './paths';
 import rules from './rules';
 
