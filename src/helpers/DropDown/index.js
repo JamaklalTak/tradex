@@ -9,6 +9,7 @@ const DropDown = (props) => {
   const [showList, setShowList] = useState(false);
 
   const _handleOptionSelection = (option) => {
+    setShowList(false);
   };
 
   return(
