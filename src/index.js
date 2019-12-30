@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { ModalProvider } from 'styled-react-modal'
 import { ThemeProvider } from 'styled-components';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
@@ -18,8 +19,10 @@ class Root extends Component {
       <Provider store={store}>
         <ConnectedRouter history={history}>
           <ThemeProvider theme={theme}>
-            <GlobalStyle />
-            <App history={history}/>
+            <ModalProvider>
+              <GlobalStyle />
+              <App history={history}/>
+            </ModalProvider>
           </ThemeProvider>
         </ConnectedRouter>
       </Provider>
