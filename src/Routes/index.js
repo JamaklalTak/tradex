@@ -1,6 +1,9 @@
 import React, { lazy, Suspense } from 'react';
 import { Route, Switch, Redirect } from 'react-router';
 
+const Home = lazy(() => import('../pages/Home'));
+const NoExist = lazy(() => import('../pages/NoExist'));
+
 const Routes = (props) => {
     return(
         <Suspense
@@ -13,7 +16,9 @@ const Routes = (props) => {
           }
         >
           <Switch>
-            <Route path='' component={} />
+            <Route path='/' component={Home} />
+            <Route path='/home' component={Home} />
+            <Route path='/*' component={NoExist} />
           </Switch>
         </Suspense>
     );

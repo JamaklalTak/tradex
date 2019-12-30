@@ -13,7 +13,7 @@ export const scaleFactor = innerWidth / 1366;
 
 const GlobalStyle = createGlobalStyle`
   body, html {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: Arial;
     background-color: ${props => props.theme.color.base_90};
     color: ${props => props.theme.color.base_20};
     font-size: ${props => props.theme.dim._14px};
@@ -77,6 +77,14 @@ const GlobalStyle = createGlobalStyle`
   font-family: inherit;
 }
 
+.header28 {
+  font-size: ${props => props.theme.dim._28px};
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: normal;
+  font-family: inherit;
+}
+
 .header24 {
   font-size: ${props => props.theme.dim._24px};
   font-weight: normal;
@@ -104,42 +112,132 @@ const GlobalStyle = createGlobalStyle`
 .header14 {
   font-size: ${props => props.theme.dim._14px};
   font-weight: 600;
-  line-height: 1.14;
+  line-height: normal;
   letter-spacing: normal;
   font-family: inherit;
 }
 
-.button14 {
-  font-size: ${props => props.theme.dim._14px};
-  font-weight: 600;
-  line-height: 1.14;
-  letter-spacing: ${props => props.theme.dim._scale(0.28)};
-  font-family: inherit;
-}
-
-.text14 {
+.title14 {
   font-size: ${props => props.theme.dim._14px};
   font-weight: normal;
-  line-height: 1.43;
+  line-height: 40px;
   letter-spacing: normal;
   font-family: inherit;
 }
+
+.titleBold14 {
+  font-size: ${props => props.theme.dim._14px};
+  font-weight: bold;
+  line-height: 40px;
+  letter-spacing: normal;
+  font-family: inherit;
+}
+
+.title18 {
+  font-size: ${props => props.theme.dim._18px};
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: normal;
+  font-family: inherit;
+}
+
+.note12 {
+  font-size: ${props => props.theme.dim._12px};
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: normal;
+  font-family: inherit;
+}
+
 
 .note14 {
   font-size: ${props => props.theme.dim._14px};
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  font-family: inherit;
+}
+
+.noteBold14 {
+  font-size: ${props => props.theme.dim._14px};
   font-weight: 600;
-  line-height: 1.33;
-  letter-spacing: ${props => props.theme.dim._scale(0.24)};
+  line-height: 24px;
+  letter-spacing: normal;
   font-family: inherit;
 }
 
 .textNormal12 {
   font-size:  ${props => props.theme.dim._12px};
   font-weight: normal;
-  line-height: 1.67;
+  line-height: 16px;
   letter-spacing: normal;
   font-family: inherit;
 }
+
+.text12 {
+  font-size:  ${props => props.theme.dim._12px};
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  font-family: inherit;
+}
+
+.textBold12 {
+  font-size:  ${props => props.theme.dim._12px};
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: normal;
+  font-family: inherit;
+}
+
+.textNormal14 {
+  font-size:  ${props => props.theme.dim._14px};
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: normal;
+  font-family: inherit;
+}
+
+.textBold14 {
+  font-size: ${props => props.theme.dim._14px};
+  font-weight: 600;
+  line-height: 1.43;
+  letter-spacing: normal;
+  font-family: inherit;
+}
+
+.text14 {
+  font-size:  ${props => props.theme.dim._14px};
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  font-family: inherit;
+}
+
+.textNormal16 {
+  font-size:  ${props => props.theme.dim._16px};
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  font-family: inherit;
+}
+
+.text16 {
+  font-size:  ${props => props.theme.dim._16px};
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: normal;
+  font-family: inherit;
+}
+
+.textBold16 {
+  font-size:  ${props => props.theme.dim._16px};
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: normal;
+  font-family: inherit;
+}
+
 `;
 
 export default GlobalStyle;
